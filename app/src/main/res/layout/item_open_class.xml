@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/space"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_image"
+            android:src="@mipmap/class_image"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <TextView
+            android:background="@color/harf_black"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="视频课"
+            android:gravity="center"
+            android:layout_width="@dimen/space_x6"
+            android:layout_height="@dimen/space_x2" />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/harf_black"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:text="开课时间：2017-10-10 "
+            android:layout_marginBottom="@dimen/space"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_x0.5"
+            android:paddingRight="@dimen/space_x0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_x2" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:id="@+id/tv_class_title"
+        android:text="英语   999人正在关注"
+        android:textColor="@color/main_text_color"
+        android:textSize="@dimen/ts_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_class_price"
+            android:text="￥99   "
+            android:textSize="@dimen/ts_small"
+             android:textColor="@color/red_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/main_text_color"
+            android:id="@+id/tv_class_teacher"
+            android:textSize="@dimen/ts_small"
+            android:text="主讲老师：黄老师"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:id="@+id/tv_class_group_id"
+        android:textColor="@color/main_text_color"
+        android:textSize="10sp"
+        android:text="互动团号 888 报名入团跟老师互动"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--升级-->
+    <external-cache-path
+        name="mn_update_external_cache"
+        path="apk/" />
+
+    <cache-path
+        name="mn_update_cache"
+        path="apk/" />
+
+    <!--拍照图片路径-->
+    <external-cache-path
+        name="image_external_cache"
+        path="image/" />
+
+    <cache-path
+        name="image_cache"
+        path="image/" />
+</paths>

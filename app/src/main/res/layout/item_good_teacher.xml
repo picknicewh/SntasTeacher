@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+     android:padding="@dimen/space"
+    android:id="@+id/ll_content"
+    android:layout_height="wrap_content">
+    <com.wh.sntasteacher.widget.CircleImageView
+        android:id="@+id/civ_image"
+        android:src="@mipmap/timng"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/space_x5"
+        android:layout_height="@dimen/space_x5" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="王老师"
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:textSize="@dimen/ts_small"
+
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_teacher_info"
+        android:layout_marginTop="@dimen/space_x0.5"
+        android:text="加州福利亚大学"
+        android:textSize="@dimen/ts_small"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

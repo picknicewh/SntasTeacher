@@ -1,0 +1,153 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.wh.sntasteacher.ui.home.clazz.fragment.HomeClassFragment">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rollPagerView"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        app:rollviewpager_play_delay="3000"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <TextView
+                android:textSize="@dimen/ts_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/main_text_color"
+                android:text="优秀教师" />
+
+            <TextView
+                android:id="@+id/tv_more_teacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:gravity="center"
+                android:textSize="@dimen/ts_small"
+                android:drawableRight="@mipmap/ic_arrow_right"
+                android:text="查看更多"
+              />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/divine_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_x0.1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_teacher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="趣视频"
+                android:textSize="@dimen/ts_large"
+                android:textColor="@color/main_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_more_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="查看更多"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:textSize="@dimen/ts_small"
+                android:gravity="center"
+                android:drawableRight="@mipmap/ic_arrow_right" />
+
+        </RelativeLayout>
+        <View
+            android:background="@color/divine_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_x0.1"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公开课"
+                android:textSize="@dimen/ts_large"
+                android:textColor="@color/main_text_color"/>
+
+            <TextView
+                android:id="@+id/tv_more_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="查看更多"
+                android:textSize="@dimen/ts_small"
+                android:gravity="center"
+                android:drawablePadding="@dimen/space_x0.5"
+                android:drawableRight="@mipmap/ic_arrow_right" />
+        </RelativeLayout>
+        <View
+            android:background="@color/divine_line_color"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_x0.1"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_open_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/transparent"
+            android:dividerHeight="0dp"
+            android:focusable="false" />
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

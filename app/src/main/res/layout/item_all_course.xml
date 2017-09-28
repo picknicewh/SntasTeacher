@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:padding="@dimen/space"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/iv_image"
+        android:src="@mipmap/class_image"
+        android:scaleType="centerCrop"
+        android:layout_width="140dp"
+        android:layout_height="100dp" />
+    <RelativeLayout
+        android:paddingLeft="@dimen/space"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/space"
+            android:id="@+id/tv_class_title"
+            android:text="让你的口语变的流利"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/space"
+            android:id="@+id/tv_class_time"
+            android:text="时长：45:00"
+            android:layout_below="@+id/tv_class_title"
+            android:textColor="@color/main_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/space"
+            android:layout_marginLeft="@dimen/space"
+            android:id="@+id/tv_class_study"
+            android:text="999人已学习"
+            android:textColor="@color/main_text_color"
+            android:layout_below="@+id/tv_class_title"
+            android:layout_toRightOf="@+id/tv_class_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="@dimen/space_x0.5"
+            android:layout_below="@+id/tv_class_time"
+            android:textColor="@color/main_text_color"
+            android:id="@+id/tv_class_teacher"
+            android:text="主讲：黄老师"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

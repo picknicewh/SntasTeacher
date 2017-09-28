@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+   <LinearLayout
+       android:id="@+id/ll"
+       android:orientation="horizontal"
+       android:layout_margin="@dimen/space"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <com.wh.sntasteacher.widget.CircleImageView
+           android:layout_gravity="center"
+           android:id="@+id/civ_image"
+           android:src="@mipmap/timng"
+           android:layout_width="@dimen/space_x4"
+           android:layout_height="@dimen/space_x4"
+           android:layout_marginRight="@dimen/space"/>
+       <LinearLayout
+           android:orientation="vertical"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/tv_name"
+               android:text="花花"
+               android:textSize="@dimen/ts_small"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_time"
+               android:layout_marginTop="@dimen/space_x0.5"
+               android:text="56楼  2分钟前"
+               android:textSize="@dimen/ts_small"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+           <TextView
+               android:id="@+id/tv_comment_content"
+               android:layout_marginTop="@dimen/space_x0.5"
+               android:text="说的很好，非常棒"
+               android:textSize="@dimen/ts_small"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+       <ImageView
+           android:id="@+id/iv_praise"
+           android:layout_gravity="center"
+           android:src="@mipmap/ic_praise"
+           android:layout_width="@dimen/space_x2"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+    <View
+        android:layout_below="@+id/ll"
+        android:background="@color/divine_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_x0.1"/>
+</RelativeLayout>

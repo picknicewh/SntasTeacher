@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:padding="@dimen/space_x2"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.wh.sntasteacher.widget.CircleImageView
+            android:id="@+id/iv_head"
+                android:src="@mipmap/timng"
+                android:layout_width="@dimen/space_x5"
+                android:layout_height="@dimen/space_x5" />
+        <TextView
+            android:id="@+id/tv_login"
+                android:text="登录 | 注册"
+                android:layout_marginLeft="@dimen/space_x2"
+                 android:textSize="@dimen/ts_large"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/divine_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_phone"
+        android:text="绑定手机"
+        android:padding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:drawableLeft="@mipmap/ic_phone"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_cause"
+        android:text="已购课程"
+        android:padding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:drawableLeft="@mipmap/ic_cart"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_collect"
+        android:text="我的收藏"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_collect"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_download"
+        android:text="我的下载"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_download"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_book"
+        android:text="我的预约"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_book"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_advice"
+        android:text="意见反馈"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_advice"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_clean"
+        android:text="清除缓存"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_clean"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_about"
+        android:text="关于Sntas"
+        android:padding="@dimen/space"
+        android:drawableLeft="@mipmap/ic_about"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space"
+        android:drawableRight="@mipmap/ic_arrow_right"
+        android:layout_marginBottom="@dimen/space_x0.1"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

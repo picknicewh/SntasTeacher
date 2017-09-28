@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wh.sntasteacher.ui.login.RegisterActivity">
+
+    <EditText
+        android:layout_margin="@dimen/space_x2"
+        android:padding="@dimen/space"
+        android:background="@drawable/grey_border_bg"
+        android:id="@+id/et_phone"
+        android:hint="请输入8-11位新密码"
+        android:textSize="@dimen/ts_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginLeft="@dimen/space_x2"
+        android:layout_marginRight="@dimen/space_x2"
+        android:id="@+id/et_check_number"
+        android:hint="请再次输入新密码"
+        android:padding="@dimen/space"
+        android:background="@drawable/grey_border_bg"
+        android:textSize="@dimen/ts_medium"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:id="@+id/btn_login"
+        android:layout_marginTop="@dimen/space_x3"
+        android:layout_marginLeft="@dimen/space_x3"
+        android:layout_marginRight="@dimen/space_x3"
+        android:text="确认"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_x_large"
+        android:padding="@dimen/space"
+        android:background="@drawable/round_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

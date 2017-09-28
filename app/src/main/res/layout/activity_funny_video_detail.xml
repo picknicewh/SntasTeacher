@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_video"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/white">
+
+            <SurfaceView
+                android:id="@+id/sv_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space"
+                android:src="@mipmap/ic_back" />
+
+            <ImageView
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/space"
+                android:src="@mipmap/ic_share_white" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_play" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/space">
+
+                <ImageView
+                    android:id="@+id/iv_play_video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_play_video" />
+
+                <SeekBar
+                    android:id="@+id/sb_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_full_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_full_screen" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_below="@+id/rl_video"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高三英语复习规划之一轮复习"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_below="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_x0.5"
+                android:text="免费"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                android:layout_below="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_x0.5"
+                android:drawableLeft="@mipmap/ic_play_grey"
+                android:layout_marginRight="@dimen/space"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:text="1247次播放" />
+            <TextView
+                android:id="@+id/tv_collect"
+                android:layout_below="@+id/tv_price"
+                android:layout_toRightOf="@+id/tv_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_x0.5"
+                android:drawableLeft="@mipmap/ic_praise"
+                android:drawablePadding="@dimen/space"
+                android:gravity="center"
+                android:text="收藏数1250" />
+
+            <LinearLayout
+                android:id="@+id/ll_recommend"
+                android:layout_below="@+id/tv_play_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/space"
+                android:paddingTop="@dimen/space">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="推荐课程"
+                    android:textColor="@color/main_text_color"
+                    android:textSize="@dimen/ts_large" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawablePadding="@dimen/space_x0.5"
+                    android:drawableRight="@mipmap/ic_arrow_right"
+                    android:text="查看更多" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_recommend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_recommend"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+         <View
+             android:id="@+id/line"
+             android:layout_below="@+id/rl_info"
+             android:background="@color/divine_line_color"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/space_x0.1"/>
+        <LinearLayout
+            android:layout_below="@id/line"
+            android:orientation="vertical"
+            android:padding="@dimen/space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部评论"
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/ts_large" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space" />
+        </LinearLayout>
+    <LinearLayout
+
+        android:layout_margin="@dimen/space_x0.5"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:padding="@dimen/space"
+            android:hint="我来说一句....."
+            android:background="@drawable/grey_border_bg"
+            android:textSize="@dimen/ts_medium"
+            android:layout_marginRight="@dimen/space_x2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="发送"
+            android:padding="@dimen/space_x0.5"
+            android:textColor="@color/white"
+            android:background="@drawable/round_main"
+            android:layout_width="@dimen/space_x4"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
+
